@@ -1,5 +1,4 @@
 var through = require('through2'),
-    replace = require('gulp-replace'),
     gutil = require('gulp-util'),
     PluginError = gutil.PluginError;
 

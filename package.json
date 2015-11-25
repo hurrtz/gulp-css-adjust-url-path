@@ -1,6 +1,6 @@
 {
   "name": "gulp-css-adjust-url-path",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Adjust absolute CSS url-properties so that they become relative upon build.",
   "main": "index.js",
   "scripts": {
@@ -19,9 +19,9 @@
     "url": "https://github.com/hurrtz/gulp-css-adjust-url-path/issues"
   },
   "homepage": "https://github.com/hurrtz/gulp-css-adjust-url-path#readme",
-  "devDependencies": {
-    "gulp-regex-replace": "^0.2.3",
+  "dependencies": {
     "gulp-util": "^3.0.7",
     "through2": "^2.0.0"
-  }
+  },
+  "devDependencies": {}
 }
