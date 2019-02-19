@@ -26,7 +26,11 @@ function gulpCssAdjustPath(needle) {
 
     // Creating a stream through which each file will pass
     return through.obj(function (file, enc, cb) {
-        pathArray = file.path.substring(file.base.length).split('/');
+        //windows uses backward slash in file path
+        var isWin = process.platform === "win32";
+        var separator = isWin ? '\\' : '/';
+        
+        pathArray = file.path.substring(file.base.length).split(separator);
         replacement = '$1' + '../' + Array(pathArray.length).join('../') + '$2';
 
         if (file.isNull()) {
